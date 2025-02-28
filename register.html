@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style_reg_log.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div id="logo">
+            <a href="index.html"><img src="img/logo.png" alt="FogDew2026"></a>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email ID" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirmPassword" placeholder="Re-enter Password" required>
+            <button type="button" onclick="sendOTP()">Verify</button>
+        </form>
+
+        <div id="otpSection" style="display:none;">
+            <h3>Enter OTP</h3>
+            <input type="text" id="otp" placeholder="Enter OTP" required>
+            <button type="button" onclick="verifyOTP()">Submit</button>
+        </div>
+
+        <p>Already registered? <a href="login.html">Login now</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
