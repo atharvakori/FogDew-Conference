@@ -79,13 +79,15 @@ Heading
     margin-top: 1.5%;
     font-size: 3rem;
     text-transform: uppercase;
-    color: #373737
+    color: #373737;
+    font-family: 'Atomic Age';
 }
 
 .heading h2{
     font-size: 1.2rem;
     color: #373737;
     font-weight: 700;
+    font-family: 'Metamorphous';
 }
 
 /* -------------------
@@ -150,7 +152,7 @@ Atmospheric Science Info Section
     margin-top: 20px;
     padding: 10px;
     color: #5d5d5d;
-    background-color: rgb(243, 240, 228);
+    background-color: rgb(240, 240, 240);
 }
 
 .atmos-science-info h2{
@@ -158,6 +160,7 @@ Atmospheric Science Info Section
     color: #373737;
     margin-top: 20px;
     font-weight: 700;
+    font-family: 'Metamorphous';
 }
 
 .atmos-science-info p{
@@ -190,6 +193,7 @@ IITM Facilities Info Section
     color: #373737;
     margin-top: 20px;
     font-weight: 700;
+    font-family: 'Metamorphous';
 }
 
 .IITM-Facilities-info p {
