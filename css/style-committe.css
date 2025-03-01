@@ -74,7 +74,7 @@ Banner Image
 .banner{
     height: 400px;
     width: 100%;
-    background-image: url('../img/About-iitm-banner.png');
+    background-image: url('../img/Organizing_Committee/Committe-bg.png');
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -108,27 +108,34 @@ Heading
     font-family: Fondamento;
 }
 
+h3{
+    color: rgb(52, 52, 52);
+}
+
 /* -------------------
 -------------------
 About-Header
 -------------------
 ------------------- */
 
-.iitm-info {
+.committee-info {
     width: 100%;
     margin-top: 20px;
     padding: 10px;
     color: #5d5d5d;
     display:flex;
-    justify-content: center;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.info {
+.info{
+    width: 1100px;
     max-width: 1100px;
     margin: 0px 20px;
 }
 
-.iitm-info p {
+.committee-info li, .committee-info-color li{
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 7px;
@@ -136,102 +143,18 @@ About-Header
 
 /* -------------------
 -------------------
-Images of Campus
+About-Header (Colored part)
 -------------------
 ------------------- */
 
-.images {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.images img{
-    height: 18vh;
-    width: 18vw;
-    margin: 7px;
-    border-radius: 9px;
-    box-shadow: 0px 0px 20px -9px rgba(0,0,0,0.75);
-}
-
-/* -------------------
--------------------
-Atmospheric Science Info Section
--------------------
-------------------- */
-
-.atmos-science-info{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.committee-info-color{
     width: 100%;
     margin-top: 20px;
     padding: 10px;
     color: #5d5d5d;
-    background-color: rgb(240, 240, 240);
-}
-
-.atmos-science-info h2{
-    font-size: 2rem;
-    color: #373737;
-    margin-top: 20px;
-    font-weight: 700;
-    font-family: 'Fondamento';
-}
-
-.atmos-science-info p{
-    max-width: 1100px;
-    margin: 10px 20px;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 7px;
-}
-
-/* -------------------
--------------------
-IITM Facilities Info Section
--------------------
-------------------- */
-
-.IITM-Facilities-info {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    display:flex;
+    justify-content:center;
     align-items: center;
-    width: 100%;
-    margin-top: 20px;
-    padding: 10px;
-    color: #5d5d5d;
+    flex-direction: column;
+    background: rgb(241, 241, 237);
 }
-
-.IITM-Facilities-info h2 {
-    font-size: 2rem;
-    color: #373737;
-    margin-top: 20px;
-    font-weight: 700;
-    font-family: 'Fondamento';
-}
-
-.IITM-Facilities-info p {
-    max-width: 1100px;
-    margin: 10px 20px;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 7px;
-}
-
-/* -------------------
--------------------
-Footer Section
--------------------
-------------------- */
-
-.footer{
-    
-}
-
-/* Extra :
-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-background: linear-gradient(to right, #C9EEFF, #F5C7F7); */

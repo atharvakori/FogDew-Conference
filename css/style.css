@@ -19,8 +19,6 @@ body {
   height: 50px; /* Maintain aspect ratio */
 }
 
-
-
 a {
   color: #f82249;
   transition: 0.5s;
@@ -45,8 +43,6 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: "Raleway", sans-serif; */
-  /* font-family: Poppins, sans-serif; */
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -79,8 +75,8 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #F15BB5;
-  color: #FEE440;
+  background: #9B5DE5;
+  color: #000000;
   width: 40px;
   height: 40px;
   text-align: center;
@@ -133,7 +129,7 @@ h6 {
   font-weight: 700;
   margin-bottom: 10px;
   color: #00BBF9;
-  font-family: 'Train One', sans-serif;
+  font-family: "Montserrat Alternates", 'Poppins', sans-serif;
 }
 
 .section-header p {
@@ -182,8 +178,7 @@ h6 {
   margin: 0;
   padding: 6px 0;
   line-height: 1;
-  /* font-family: "Raleway", sans-serif; */
-  /* font-family: Poppins, sans-serif; */
+
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -278,8 +273,6 @@ h6 {
   text-decoration: none;
   display: inline-block;
   color: rgba(202, 206, 221, 0.8);
-  /* font-family: "Raleway", sans-serif; */
-  /* font-family: Poppins, sans-serif; */
   font-weight: 600;
   font-size: 14px;
   outline: none;
@@ -384,7 +377,7 @@ h6 {
 }
 
 .nav-menu ul li:hover > a {
-  background: #f87ec7;
+  background: #9B5DE5;
   color: #000000;
 }
 
@@ -550,12 +543,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #F5F5F5;
   font-weight: 600;
   font-size:60px;
-  font-family: 'Atomic Age', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 #intro h1 {
   color: #00F5D4;
-  font-family: 'Atomic Age', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   font-size: 90px;
   font-weight: 600;
   /* text-transform: uppercase; */
@@ -642,8 +635,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .about-btn {
-  /* font-family: "Raleway", sans-serif; */
-  /* font-family: Poppins, sans-serif; */
   font-weight: 700;
   font-size: 17px;
   letter-spacing: 1px;
@@ -1166,8 +1157,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 18px 0;
   display: block;
   position: relative;
-  /* font-family: "Raleway", sans-serif; */
-  /* font-family: Poppins, sans-serif; */
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
@@ -1459,8 +1448,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  /* font-family: "Raleway", sans-serif; */
-  /* font-family: Poppins, sans-serif; */
   font-weight: 700;
   color: #fff;
 }
@@ -1474,8 +1461,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  /* font-family: "Raleway", sans-serif; */
-  /* font-family: Poppins, sans-serif; */
   color: #fff;
 }
 

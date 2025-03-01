@@ -12,6 +12,24 @@ html,body{
 
 /* -------------------
 -------------------
+Host Banner
+-------------------
+------------------- */
+
+.top-banner {
+    width: 100%;
+    text-align: center; /* Center the image */
+    padding: 10px 0; /*Add some spacing */
+    border-bottom: 1px solid #ddd; /* Thin separator line */
+}
+
+.top-banner img {
+    max-width: 100%;
+    height: 50px; /* Maintain aspect ratio */
+  }
+
+/* -------------------
+-------------------
 Navbar
 -------------------
 ------------------- */
@@ -80,14 +98,14 @@ Heading
     font-size: 3rem;
     text-transform: uppercase;
     color: #373737;
-    font-family: 'Atomic Age';
+    font-family: 'Montserrat Alternates';
 }
 
 .heading h2{
     font-size: 1.2rem;
     color: #373737;
     font-weight: 700;
-    font-family: 'Metamorphous';
+    font-family: 'Fondamento';
 }
 
 /* -------------------
@@ -155,11 +173,11 @@ Explore Pune Info Section
 }
 
 .explore-pune-info h2{
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #373737;
     margin-top: 20px;
     font-weight: 700;
-    font-family: 'Metamorphous';
+    font-family: 'Fondamento';
 }
 
 .explore-pune-info p{
