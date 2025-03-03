@@ -6,8 +6,7 @@
 }
 
 html,body{
-    width: 100%;
-    height: 100%;
+    background: linear-gradient(to right, #c9eeff3e, #f5c7f73e);
 }
 
 /* -------------------
@@ -21,6 +20,7 @@ Host Banner
     text-align: center; /* Center the image */
     padding: 10px 0; /*Add some spacing */
     border-bottom: 1px solid #ddd; /* Thin separator line */
+    background-color: #ffffff;
 }
 
 .top-banner img {
@@ -87,10 +87,12 @@ Heading
 ------------------- */
 
 .heading{
+    width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
 }
 
 .heading h1{
@@ -99,4 +101,83 @@ Heading
     text-transform: uppercase;
     color: #373737;
     font-family: 'Montserrat Alternates';
+}
+
+.heading p{
+    text-align: center;
+    color: #505050;
+}
+
+.heading a{
+    color: #0E4F99
+}
+
+.heading .login{
+    color: #070e23;
+}
+
+/* -------------------
+-------------------
+Form
+-------------------
+------------------- */
+
+.Registration_form{
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    margin: 0 auto;
+}
+
+.name-email, .password{
+    display: flex;
+    justify-content: space-between;
+}
+
+ input[type=text], input[type=email], input[type=tel], input[type=password]{
+    border: none;
+    background-color: #FAFAFA;
+    height: 40px;
+    width: 400px;
+ }
+
+button{
+    margin-top: 20px;
+    background-color: #00BBF9;
+    border-radius: 20px;
+    border: #00BBF9;
+    padding: 20px;
+}
+
+.email, .conf_pass{
+    padding-left: 10px;
+}
+
+label{
+    font-size: 1.18rem;
+}
+
+.chkbxpolicy span{
+    color: #00BBF9
+}
+
+/* -------------------
+-------------------
+Footer
+-------------------
+------------------- */
+
+footer{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    background-color: #070E23;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+footer div{
+    margin-top: 1.5em;
 }
