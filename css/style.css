@@ -389,9 +389,9 @@ h6 {
 
 #mobile-nav-toggle {
   position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 999;
+  right: 10px;
+  top: 70px;
+  z-index: 1100;
   margin: 15px 15px 0 0;
   border: 0;
   background: none;
@@ -839,6 +839,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: block;
   border-bottom: 0;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
 #schedule .nav-tabs li {
@@ -852,7 +855,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 600;
   background-color: #F15BB5;
   color: #000000;
-  padding: 10px 100px;
+  padding: 10px 50px;
 }
 
 #schedule .nav-tabs a.active {

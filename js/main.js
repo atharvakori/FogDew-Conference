@@ -15,7 +15,8 @@ jQuery(document).ready(function( $ ) {
 
   // Header fixed on scroll
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
+    var topBannerHeight = $('.top-banner').outerHeight();
+    if ($(this).scrollTop() > topBannerHeight) {
       $('#header').addClass('header-scrolled');
     } else {
       $('#header').removeClass('header-scrolled');
