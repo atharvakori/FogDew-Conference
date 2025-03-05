@@ -188,7 +188,23 @@ Explore Pune Info Section
     margin-bottom: 7px;
 }
 
-/* .section-1, .section-3, .section-5{
-    background-color: rgb(241, 241, 241);
-    width: 100vw;
-} */
+/* -------------------
+-------------------
+Footer
+-------------------
+------------------- */
+
+footer{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    background-color: #070E23;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+footer div{
+    margin-top: 1.5em;
+}

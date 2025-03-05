@@ -228,8 +228,19 @@ Footer Section
 -------------------
 ------------------- */
 
-.footer{
-    
+footer{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    background-color: #070E23;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+footer div{
+    margin-top: 1.5em;
 }
 
 /* Extra :
