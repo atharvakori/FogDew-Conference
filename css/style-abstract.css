@@ -135,3 +135,44 @@ About Section
 .left, .right{
     width: 50%;
 }
+
+/* -------------------
+-------------------
+Button
+-------------------
+------------------- */
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 7px;
+    width: 20%;
+    border-radius: 15px;
+    font-weight: 500;
+    background-color: #00BBF9;
+    margin-left: 1rem;
+    border-color: #00BBF9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* -------------------
+-------------------
+Footer
+-------------------
+------------------- */
+
+footer{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    background-color: #070E23;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+footer div{
+    margin-top: 1.5em;
+}
