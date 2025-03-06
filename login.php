@@ -42,12 +42,12 @@
       <h1>SignIn</h1>
       <p>Enter your email and password to proceed further</p>
       <p class="register">
-        <b>Don’t have an account? <a href="register.html">Register now</a></b>
+        <b>Don’t have an account? <a href="register.php">Register now</a></b>
       </p>
     </section>
 
     <div class="Login-form">
-      <form action="" method="post">
+      <form action="registration.php" method="post">
         <div class="email">
             <label for="email">Email</label>
             <input

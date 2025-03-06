@@ -51,7 +51,7 @@
     </section>
 
     <div class="Registration_form">
-      <form action="" method="post">
+      <form action="registration.php" method="post">
         <div class="name-email">
           <div class="name">
             <label for="name">Full Name</label><br />
