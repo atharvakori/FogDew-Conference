@@ -6,7 +6,7 @@
 }
 
 html,body{
-    background: linear-gradient(to right, #c9eeff3e, #f5c7f73e);
+    /* background: linear-gradient(to right, #c9eeff3e, #f5c7f73e); */
 }
 
 /* -------------------
@@ -114,6 +114,7 @@ Heading
 
 .heading .login{
     color: #070e23;
+    font-size: 1rem;
 }
 
 /* -------------------
