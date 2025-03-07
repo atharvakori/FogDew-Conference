@@ -69,8 +69,8 @@
               required
             />
         </div>
-        <a href="#">Forget Password?</a>
-        <button type="submit">Login</button>
+        <a href="forget-password.html">Forget Password?</a>
+        <button type="submit" name="login">Login</button>
       </form>
     </div>
 
