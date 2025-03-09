@@ -70,9 +70,6 @@
             placeholder="  example@abc.com"
             required />
         </div>
-      </div>
-
-      <div class="ph_no">
         <div>
           <label for="phone">Phone Number</label><br />
           <input

@@ -126,13 +126,12 @@ Form
 .Registration_form{
     display: flex;
     justify-content: center;
-    width: 40vw;
+    width: 90vw;
     margin: 0 auto;
 }
 
 .name-email, .password{
     display: flex;
-    justify-content: space-between;
 }
 
  input[type=text], input[type=email], input[type=tel], input[type=password]{
