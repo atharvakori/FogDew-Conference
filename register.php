@@ -198,7 +198,7 @@
       </div>
       <br />
       <div class="chkbxpolicy">
-        <input type="checkbox" name="chkbxpolicy" id="chkbxpolicy" />
+        <input type="checkbox" name="chkbxpolicy" id="chkbxpolicy" required/>
         I have read the <span>cancellation policy</span>
       </div>
       <button type="submit" name="register">Send Verification Mail</button>

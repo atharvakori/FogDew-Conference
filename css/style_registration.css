@@ -1,12 +1,13 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Poppins, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
 }
 
-html,body{
-    /* background: linear-gradient(to right, #c9eeff3e, #f5c7f73e); */
+html,
+body {
+  /* background: linear-gradient(to right, #c9eeff3e, #f5c7f73e); */
 }
 
 /* -------------------
@@ -16,17 +17,17 @@ Host Banner
 ------------------- */
 
 .top-banner {
-    width: 100%;
-    text-align: center; /* Center the image */
-    padding: 10px 0; /*Add some spacing */
-    border-bottom: 1px solid #ddd; /* Thin separator line */
-    background-color: #ffffff;
+  width: 100%;
+  text-align: center; /* Center the image */
+  padding: 10px 0; /*Add some spacing */
+  border-bottom: 1px solid #ddd; /* Thin separator line */
+  background-color: #ffffff;
 }
 
 .top-banner img {
-    max-width: 100%;
-    height: 50px; /* Maintain aspect ratio */
-  }
+  max-width: 100%;
+  height: 50px; /* Maintain aspect ratio */
+}
 
 /* -------------------
 -------------------
@@ -34,35 +35,35 @@ Navbar
 -------------------
 ------------------- */
 
-#navbar{
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 10px;
-    background-color: #070e23;
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 10px;
+  background-color: #070e23;
 }
 
-#navbar #logo a img{
-    margin: 5px;
-    padding-top: 5px;
-    max-height: 40px;
+#navbar #logo a img {
+  margin: 5px;
+  padding-top: 5px;
+  max-height: 40px;
 }
 
-#navbar #menu ul{
-    display: flex;
-    list-style-type: none;
+#navbar #menu ul {
+  display: flex;
+  list-style-type: none;
 }
 
-#navbar #menu ul li{
-    margin: 5px;
-    padding: 5px;
+#navbar #menu ul li {
+  margin: 5px;
+  padding: 5px;
 }
 
-#navbar #menu ul li a{
-    text-decoration:none;
-    font-weight: 600;
-    font-size: 14px;
-    display: inline-block;
-    color: rgba(202, 206, 221, 0.8);;
+#navbar #menu ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  display: inline-block;
+  color: rgba(202, 206, 221, 0.8);
 }
 
 /* -------------------
@@ -71,13 +72,13 @@ Banner Image
 -------------------
 ------------------- */
 
-.banner{
-    height: 400px;
-    width: 100%;
-    background-image: url('../img/Registration_Login/banner.png');
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
+.banner {
+  height: 400px;
+  width: 100%;
+  background-image: url("../img/Registration_Login/banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* -------------------
@@ -86,36 +87,36 @@ Heading
 -------------------
 ------------------- */
 
-.heading{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 10px;
+.heading {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
-.heading h1{
-    margin-top: 1.5%;
-    font-size: 3rem;
-    text-transform: uppercase;
-    color: #373737;
-    font-family: 'Montserrat Alternates';
+.heading h1 {
+  margin-top: 1.5%;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #373737;
+  font-family: "Montserrat Alternates";
 }
 
-.heading p{
-    text-align: center;
-    color: #505050;
+.heading p {
+  text-align: center;
+  color: #505050;
 }
 
-.heading a{
-    color: #0E4F99
+.heading a {
+  color: #0e4f99;
 }
 
-.heading .login{
-    color: #070e23;
-    font-size: 1rem;
+.heading .login {
+  color: #070e23;
+  font-size: 1rem;
 }
 
 /* -------------------
@@ -124,112 +125,126 @@ Form
 -------------------
 ------------------- */
 
-.Registration_form{
-    display: flex;
-    justify-content: center;
-    width: 90vw;
-    margin: 0 auto;
-}
-.Registration_form h2{
-    margin: 20px 0 30px 0;
-    color: #373737;
-    text-align: center;
+.Registration_form {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+  margin: 0 auto;
 }
 
-
-.name-email, .password{
-    display: flex;
+.Registration_form h2 {
+  margin: 20px 0 30px 0;
+  color: #373737;
+  text-align: center;
 }
 
- input[type=text], input[type=email], input[type=tel], input[type=password]{
-    border: none;
-    background-color: #FAFAFA;
-    height: 40px;
-    width: 400px;
- }
-
-button{
-    margin-top: 20px;
-    background-color: #00BBF9;
-    border-radius: 20px;
-    border: #00BBF9;
-    padding: 20px;
+.name-email,
+.password {
+  display: flex;
 }
 
-.email, .conf_pass, .phone{
-    padding-left: 10px;
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  border: none;
+  background-color: #fafafa;
+  height: 40px;
+  width: 400px;
 }
 
-label{
-    font-size: 1.18rem;
+button {
+  margin-top: 20px;
+  background-color: #0e4f99;
+  border-radius: 20px;
+  border: #0e4f99;
+  padding: 20px;
+  color: #ffffff;
+  font-size: 1rem;
 }
 
-.chkbxpolicy span{
-    color: #00BBF9
+.email,
+.conf_pass,
+.phone {
+  padding-left: 10px;
 }
 
+label {
+  font-size: 1.18rem;
+}
+
+.chkbxpolicy span {
+  color: #00bbf9;
+}
 
 .gender-diet-allergy {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
 }
 
-.gender, .diet, .allergy {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    justify-content: left;
+.gender,
+.diet,
+.allergy {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: left;
 }
 
-.gender label, .diet label, .allergy label {
-    margin-bottom: 5px;
+.gender label,
+.diet label,
+.allergy label {
+  margin-bottom: 5px;
 }
 
-.affiliation, .endorsement{
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
-    justify-content: left;
+.affiliation,
+.endorsement {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  justify-content: left;
 }
 
-.affilation-section label{
-    margin-bottom: 5px;
+.affilation-section label {
+  margin-bottom: 5px;
 }
 
 .endorsement input[type="file"] {
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1rem;
-    color: #373737;
-    cursor: pointer;    
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #373737;
+  cursor: pointer;
 }
 
 .endorsement input[type="file"]::file-selector-button {
-    background-color: #0E4F99;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 1rem;
+  background-color: #0e4f99;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
-.institute{
-    display: flex;
-    flex-direction: column;
+.institute {
+  display: flex;
+  flex-direction: column;
 }
 
-.institute_name_address, .designation_country{
-    display: flex;
+.institute_name_address,
+.designation_country {
+  display: flex;
 }
 
-.designation_country{
-    margin-top: 20px;
+.designation_country {
+  margin-top: 20px;
 }
 
- .institute_address, .country{
-    padding-left: 10px;
+.institute_address,
+.country {
+  padding-left: 10px;
 }
 
 /* -------------------
@@ -238,13 +253,13 @@ Footer
 -------------------
 ------------------- */
 
-footer{
-    height: 8vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    background-color: #070E23;
-    color: #ffffff;
-    margin-top: 20px;
+footer {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  background-color: #070e23;
+  color: #ffffff;
+  margin-top: 20px;
 }
