@@ -5,11 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Registration Form</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous" />
+
   <link rel="stylesheet" href="css/style_registration.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,6 +48,8 @@
 
   <div class="Registration_form">
     <form action="registration.php" method="post">
+      <h2>Personal Info</h2>
+    
       <div class="name-email">
         <div class="name">
           <label for="name">Full Name</label><br />
@@ -59,7 +57,7 @@
             type="text"
             id="name"
             name="name"
-            placeholder="  Eg.John Parker" />
+            placeholder="  Eg.John Parker" required/>
         </div>
         <div class="email">
           <label for="email">Email</label><br />
@@ -70,7 +68,7 @@
             placeholder="  example@abc.com"
             required />
         </div>
-        <div>
+        <div class="phone">
           <label for="phone">Phone Number</label><br />
           <input
             type="tel"
@@ -81,6 +79,103 @@
         </div>
       </div>
 
+
+      <div class="gender-diet-allergy">
+        <div class="gender">
+          <label for="gender">Gender</label>
+          <div>
+            <input type="radio" id="male" name="gender" value="male" required />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required />
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required />
+            <label for="other">Other</label>
+          </div>
+        </div>
+        <div class="diet">
+          <label for="diet">Diet</label>
+          <div>
+            <input type="radio" id="veg" name="diet" value="veg" required />
+            <label for="veg">Veg</label>
+            <input type="radio" id="non-veg" name="diet" value="non-veg" required />
+            <label for="non-veg">Non-Veg</label>
+          </div>
+        </div>
+        <div class="allergy">
+          <label for="allergy">Food Allergy</label>
+          <div>
+            <input type="radio" id="allergy-yes" name="allergy" value="yes" required />
+            <label for="allergy-yes">Yes</label>
+            <input type="radio" id="allergy-no" name="allergy" value="no" required />
+            <label for="allergy-no">No</label>
+          </div>
+        </div>
+      </div>
+      <br>
+  
+      <h2>Affilation & Oraganization Info</h2>
+      <div class="affilation-section">
+        <div class="affiliation">
+          <label for="as_a">Register Yourself as</label>
+          <div>
+            <input type="radio" id="student" name="as_a" value="student" required />
+            <label for="student">Student</label>
+            <input type="radio" id="delegates" name="as_a" value="delegates" required />
+            <label for="delegates">Delegates</label>
+          </div>
+        </div>
+
+        <div class="endorsement">
+          <label for="endorsement">Endorsement Letter from your guide / Institute</label>
+          <div>
+            <input type="file" id="endorsement" name="endorsement" />
+          </div>
+        </div>
+
+        <div class="institute">
+          <div class="institute_name_address">
+            <div class="institute_name">
+              <label for="institute">Affliation / Institute Name</label><br />
+              <input
+                type="text"
+                id="institute_name"
+                name="institute_name"
+                placeholder="  Eg.IITM" required/>
+            </div>
+            <div class="institute_address">
+              <label for="institute">Affliation / Institute Address</label><br />
+              <input
+                type="text"
+                id="institute_address"
+                name="institute_address"
+                placeholder="  Eg.123 Main St, City, Country" required/>
+            </div>
+          </div>
+
+          <div class="designation_country">
+            <div class="designation">
+              <label for="designation">Designation</label><br />
+              <input
+                type="text"
+                id="designation"
+                name="designation"
+                placeholder="  Eg.Professor" required/>
+            </div>
+            <div class="country">
+              <label for="country">Country</label><br />
+              <input
+                type="text"
+                id="country"
+                name="country"
+                placeholder="  Eg.India" required/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+    
+      <h2>Login Credential Setup</h2>
       <div class="password">
         <div class="pass">
           <label for="password">Password</label><br />

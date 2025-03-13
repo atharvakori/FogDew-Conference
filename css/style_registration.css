@@ -93,6 +93,7 @@ Heading
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .heading h1{
@@ -129,6 +130,12 @@ Form
     width: 90vw;
     margin: 0 auto;
 }
+.Registration_form h2{
+    margin: 20px 0 30px 0;
+    color: #373737;
+    text-align: center;
+}
+
 
 .name-email, .password{
     display: flex;
@@ -149,7 +156,7 @@ button{
     padding: 20px;
 }
 
-.email, .conf_pass{
+.email, .conf_pass, .phone{
     padding-left: 10px;
 }
 
@@ -159,6 +166,70 @@ label{
 
 .chkbxpolicy span{
     color: #00BBF9
+}
+
+
+.gender-diet-allergy {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.gender, .diet, .allergy {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: left;
+}
+
+.gender label, .diet label, .allergy label {
+    margin-bottom: 5px;
+}
+
+.affiliation, .endorsement{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    justify-content: left;
+}
+
+.affilation-section label{
+    margin-bottom: 5px;
+}
+
+.endorsement input[type="file"] {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #373737;
+    cursor: pointer;    
+}
+
+.endorsement input[type="file"]::file-selector-button {
+    background-color: #0E4F99;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.institute{
+    display: flex;
+    flex-direction: column;
+}
+
+.institute_name_address, .designation_country{
+    display: flex;
+}
+
+.designation_country{
+    margin-top: 20px;
+}
+
+ .institute_address, .country{
+    padding-left: 10px;
 }
 
 /* -------------------
@@ -176,8 +247,4 @@ footer{
     background-color: #070E23;
     color: #ffffff;
     margin-top: 20px;
-}
-
-footer div{
-    margin-top: 1.5em;
 }
