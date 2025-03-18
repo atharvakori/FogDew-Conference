@@ -247,6 +247,19 @@ label {
   padding-left: 10px;
 }
 
+.otpverify{
+  display: none;
+}
+
+.otpverify button {
+  margin-top: 10px;
+  background-color: #00BBFA;
+  border-radius: 10px;
+  border: #00BBFA;
+  padding: 10px;
+  color: #000000;
+  font-size: 0.8rem;
+}
 /* -------------------
 -------------------
 Footer

@@ -201,6 +201,17 @@
         <input type="checkbox" name="chkbxpolicy" id="chkbxpolicy" required/>
         I have read the <span>cancellation policy</span>
       </div>
+      <br />
+      <div class="otpverify">
+        <label for="otp">Enter OTP</label><br />
+        <input
+          type="text"
+          id="otp"
+          name="otp"
+          placeholder="  Enter OTP sent to your email"
+          required />
+          <button class="btn" id="otp">Verify</button>
+      </div>
       <button type="submit" name="register">Send Verification Mail</button>
     </form>
   </div>
@@ -214,10 +225,7 @@
     </div>
   </footer>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <script src="js/registration_otp.js"></script>
 </body>
 
 </html>
