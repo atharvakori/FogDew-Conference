@@ -47,7 +47,7 @@
   </section>
 
   <div class="Registration_form">
-    <form action="registration.php" method="post">
+    <form action="registration.php" method="post" enctype="multipart/form-data">
       <h2>Personal Info</h2>
     
       <div class="name-email">
