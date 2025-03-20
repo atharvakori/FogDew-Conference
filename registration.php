@@ -1,18 +1,50 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'lib/PHPMailer-master/src/Exception.php';
+require 'lib/PHPMailer-master/src/PHPMailer.php';
+require 'lib/PHPMailer-master/src/SMTP.php';
 session_start();
 include 'connect.php';
 
-require "lib/PHPMailer-master/src/PHPMailer.php";
-require "lib/PHPMailer-master/src/SMTP.php";
-require "lib/PHPMailer-master/src/Exception.php";
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
+if (isset($_POST['register'])){
+    $mail = new PHPMailer(true);
+
+    try {
+        //Server settings
+        // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+        $mail->isSMTP();                                            //Send using SMTP
+        $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+    
+        $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+        $mail->Username   = 'atharva.kori7@gmail.com';                     //SMTP username
+        $mail->Password   = '{{atharvA@}}';                               //SMTP password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            // SMTPSecure = PHPMailer::ENCRYPTION_SMTPS 465 Enable implicit TLS encryption
+        $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    
+        //Recipients
+        $mail->setFrom('atharva.kori7@gmail.com', 'Mailer');
+        $mail->addAddress('atharva.kori7@gmail.com', 'Joe User');     //Add a recipient
+    
+        //Content
+        $mail->isHTML(true);                                  //Set email format to HTML
+        $mail->Subject = 'Here is the subject';
+        $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+    
+    
+        $mail->send();
+        echo 'Message has been sent';
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
+}
 
 
-if (isset($_POST['register'])) {
-    $fullname = $_POST['name']; // full_name of participant
-    $email = $_POST['email']; // send_to_email
+if (isset($_POST['otp_verified'])) {
+    $fullname = $_POST['name'];
+    $email = $_POST['email']; 
     $phoneNo = $_POST['phone'];
     $password = $_POST['password'];
     $gender = $_POST['gender'];
@@ -53,34 +85,6 @@ if (isset($_POST['register'])) {
             echo "File upload failed!";
             exit();
         }
-
-        $verification_otp = random_int(100000, 999999);
-
-        function sendMail($send_to, $otp, $name) {
-            $mail = new PHPMailer(true);
-            $mail->isSMTP();
-            $mail->SMTPAuth = true;
-            $mail->SMTPSecure = "tls";
-            $mail->Host = "smtp.gmail.com";
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-            $mail->Port = 587;
-        
-            $mail->Username = "atharva.kori23@pccoepune.org";
-            $mail->Password   = '@thPccoe77';
-        
-            $mail->setFrom("atharva.kori23@pccoepune.org", "FogDew Conference Registration");
-        
-            $mail->addAddress($send_to);
-        
-            $mail->Subject = "Account Verification for Conference Registration";
-        
-            $mail->Body = "Hello, {$name}\nYour account registration is successfully done! Now activate your account with OTP {$otp}.";
-            $mail->send();
-        }
-        
-        sendMail($email, $verification_otp, $fullname);
-
-        echo "Email Sent Successfully!";
     }
     
     $checkEmail = "SELECT * FROM registration WHERE email='$email'";

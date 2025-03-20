@@ -203,15 +203,15 @@
       </div>
       <br />
       <div class="otpverify">
-        <label for="otp">Enter OTP</label><br />
+        <label for="otpInput">Enter OTP</label><br />
         <input
           type="text"
-          id="otp"
-          placeholder="  Enter OTP sent to your email"
-          required />
-          <button class="btn" id="otp">Verify</button>
+          id="otpInput"
+          name="otp"
+          placeholder="  Enter OTP sent to your email"/>
+          <button type="submit" class="btn" name="otp_verified">Verify</button>
       </div>
-      <button type="submit" name="register">Send Verification Mail</button>
+      <button name="register" id="sendVerification">Send Verification Mail</button>
     </form>
   </div>
 
@@ -223,5 +223,20 @@
       </p>
     </div>
   </footer>
+
+  <script>
+  const submitButton = document.getElementById("sendVerification");
+  const otpSection = document.querySelector(".otpverify");
+  const form = document.querySelector("form");
+
+  submitButton.addEventListener("click", function(event) {    
+    if(form.checkValidity()){
+      otpSection.style.display = "block";
+      otpInput.setAttribute("required", "required");
+      alert("OTP Sent to your Email!");
+      event.preventDefault();
+    }
+  });
+</script>
 </body>
 </html>
