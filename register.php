@@ -49,7 +49,7 @@
   <div class="Registration_form">
     <form action="registration.php" method="post" enctype="multipart/form-data">
       <h2>Personal Info</h2>
-    
+
       <div class="name-email">
         <div class="name">
           <label for="name">Full Name</label><br />
@@ -57,7 +57,7 @@
             type="text"
             id="name"
             name="name"
-            placeholder="  Eg.John Parker" required/>
+            placeholder="  Eg.John Parker" required />
         </div>
         <div class="email">
           <label for="email">Email</label><br />
@@ -112,7 +112,7 @@
         </div>
       </div>
       <br>
-  
+
       <h2>Affilation & Oraganization Info</h2>
       <div class="affilation-section">
         <div class="affiliation">
@@ -140,7 +140,7 @@
                 type="text"
                 id="institute_name"
                 name="institute_name"
-                placeholder="  Eg.IITM" required/>
+                placeholder="  Eg.IITM" required />
             </div>
             <div class="institute_address">
               <label for="institute">Affliation / Institute Address</label><br />
@@ -148,7 +148,7 @@
                 type="text"
                 id="institute_address"
                 name="institute_address"
-                placeholder="  Eg.123 Main St, City, Country" required/>
+                placeholder="  Eg.123 Main St, City, Country" required />
             </div>
           </div>
 
@@ -159,7 +159,7 @@
                 type="text"
                 id="designation"
                 name="designation"
-                placeholder="  Eg.Professor" required/>
+                placeholder="  Eg.Professor" required />
             </div>
             <div class="country">
               <label for="country">Country</label><br />
@@ -167,14 +167,14 @@
                 type="text"
                 id="country"
                 name="country"
-                placeholder="  Eg.India" required/>
+                placeholder="  Eg.India" required />
             </div>
           </div>
         </div>
       </div>
 
       <br>
-    
+
       <h2>Login Credential Setup</h2>
       <div class="password">
         <div class="pass">
@@ -198,20 +198,22 @@
       </div>
       <br />
       <div class="chkbxpolicy">
-        <input type="checkbox" name="chkbxpolicy" id="chkbxpolicy" required/>
+        <input type="checkbox" name="chkbxpolicy" id="chkbxpolicy" required />
         I have read the <span>cancellation policy</span>
       </div>
       <br />
-      <div class="otpverify">
-        <label for="otpInput">Enter OTP</label><br />
-        <input
-          type="text"
-          id="otpInput"
-          name="otp"
-          placeholder="  Enter OTP sent to your email"/>
-          <button type="submit" class="btn" name="otp_verified">Verify</button>
-      </div>
-      <button name="register" id="sendVerification">Send Verification Mail</button>
+      <button type="submit" name="register" id="sendVerification">OTP Verification</button>
+      <form action="registration.php" method="post">
+        <div class="otpverify">
+          <label for="otpInput">Enter OTP</label><br />
+          <input
+            type="text"
+            id="otpInput"
+            name="otp"
+            placeholder="  Enter OTP sent to your email" />
+          <button class="btn" name="otp_verified">verify</button>
+        </div>
+      </form>
     </form>
   </div>
 
@@ -224,7 +226,7 @@
     </div>
   </footer>
 
-  <script>
+  <!-- <script>
   const submitButton = document.getElementById("sendVerification");
   const otpSection = document.querySelector(".otpverify");
   const form = document.querySelector("form");
@@ -237,6 +239,7 @@
       event.preventDefault();
     }
   });
-</script>
+</script> -->
 </body>
+
 </html>

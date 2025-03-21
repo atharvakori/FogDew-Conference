@@ -154,14 +154,15 @@ input[type="password"] {
 }
 
 button {
-  margin-top: 20px;
-  background-color: #0e4f99;
-  border-radius: 20px;
-  border: #0e4f99;
-  padding: 20px;
-  color: #ffffff;
-  font-size: 1rem;
+  margin-top: 10px;
+  background-color: #00BBFA;
+  border-radius: 10px;
+  border: #00BBFA;
+  padding: 10px;
+  color: #000000;
+  font-size: 0.8rem;
 }
+
 
 .email,
 .conf_pass,
@@ -248,17 +249,18 @@ label {
 }
 
 .otpverify{
-  display: none;
+  /* display: none; */
+  margin-top: 20px;
 }
 
 .otpverify button {
-  margin-top: 10px;
-  background-color: #00BBFA;
-  border-radius: 10px;
-  border: #00BBFA;
-  padding: 10px;
-  color: #000000;
-  font-size: 0.8rem;
+  margin-top: 20px;
+  background-color: #0e4f99;
+  border-radius: 20px;
+  border: #0e4f99;
+  padding: 20px;
+  color: #ffffff;
+  font-size: 1rem;
 }
 /* -------------------
 -------------------
