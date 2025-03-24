@@ -24,8 +24,8 @@ if (isset($_POST['register'])){
         $mail->Port = 587;
     
         // Enter your email ID
-        $mail->Username = "atharva.kori7@gmail.com";
-        $mail->Password = "pemamdjcgrsetfxv";
+        $mail->Username = "";
+        $mail->Password = "";
     
         // Your email ID and Email Title
         $mail->setFrom("atharva.kori7@gmail.com", "FogDew");

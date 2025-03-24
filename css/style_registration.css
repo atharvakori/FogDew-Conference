@@ -153,6 +153,7 @@ input[type="password"] {
   width: 400px;
 }
 
+/*This button will send the OTP*/
 button {
   margin-top: 10px;
   background-color: #00BBFA;
@@ -218,15 +219,16 @@ label {
   color: #373737;
   cursor: pointer;
 }
-
+/* This Endorsement file button*/
 .endorsement input[type="file"]::file-selector-button {
-  background-color: #0e4f99;
-  border: none;
-  padding: 10px 20px;
+  background-color: #00BBFA;
   border-radius: 5px;
-  color: #ffffff;
+  border: #00BBFA;
+  padding: 10px;
+  color: #000000;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  margin-right: 9px;
 }
 
 .institute {
@@ -249,18 +251,32 @@ label {
 }
 
 .otpverify{
-  /* display: none; */
   margin-top: 20px;
+  display: flex;
+  width: 90vw;
+  justify-content:center;
+  align-items: center;
+  margin: 0 auto;
 }
 
+.otpverify h2, label, input, button {
+  margin: 10px;
+}
+
+/* This is last (Final) button*/
 .otpverify button {
-  margin-top: 20px;
   background-color: #0e4f99;
-  border-radius: 20px;
-  border: #0e4f99;
-  padding: 20px;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
   color: #ffffff;
-  font-size: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem; 
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 /* -------------------
 -------------------
