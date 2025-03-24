@@ -22,8 +22,8 @@ function sendMail($send_to, $otp, $name)
         $mail->Port       = 587;
 
         // Set your SMTP credentials
-        $mail->Username   = "atharva.kori7@gmail.com";  // Change to your SMTP email address
-        $mail->Password   = "usvicugxxpdvrfkb";     // Change to your SMTP email password
+        $mail->Username   = "";  // Change to your SMTP email address
+        $mail->Password   = "";     // Change to your SMTP email password
 
         // Set sender info
         $mail->setFrom("atharva.kori7@gmail.com", "FogDew");
