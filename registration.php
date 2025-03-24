@@ -23,7 +23,7 @@ function sendMail($send_to, $otp, $name)
 
         // Set your SMTP credentials
         $mail->Username   = "atharva.kori7@gmail.com";  // Change to your SMTP email address
-        $mail->Password   = "pemamdjcgrsetfxv";     // Change to your SMTP email password
+        $mail->Password   = "usvicugxxpdvrfkb";     // Change to your SMTP email password
 
         // Set sender info
         $mail->setFrom("atharva.kori7@gmail.com", "FogDew");
@@ -126,7 +126,7 @@ if (isset($_POST['register'])) {
 
     // echo "OTP has been sent to your email. Please enter the OTP to complete registration.";
     // exit();
-    header("Location: hello.html");
+    header("Location: register_otp.php");
 }
 
 // Step 2: OTP verification and final registration insertion

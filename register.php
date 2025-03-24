@@ -126,7 +126,7 @@
         </div>
 
         <div class="endorsement">
-          <label for="endorsement">Endorsement Letter from your guide / Institute</label>
+          <label for="endorsement">Endorsement Letter from your guide / Institute (PDF Only)</label>
           <div>
             <input type="file" id="endorsement" name="endorsement" />
           </div>
@@ -205,18 +205,7 @@
       <button type="submit" name="register" id="sendVerification">Send Email for OTP!</button>
     </form>
   </div>
-  <div class="otpverify" id="otpSection">
-    <form action="registration.php" method="post">
-      <h2>Please check your email for OTP !</h2>
-      <label for="otpInput">Enter OTP</label><br />
-      <input
-        type="text"
-        id="otpInput"
-        name="otp"
-        placeholder="  Enter OTP sent to your email" /> <br>
-      <button class="btn" name="otp_verified">verify & Save</button>
-    </form>
-  </div>
+  
   <footer>
     <div>
       <p>
