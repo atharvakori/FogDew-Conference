@@ -69,7 +69,7 @@
               required
             />
         </div>
-        <a href="forget-password.html">Forget Password?</a>
+        <a href="forget-password.php">Forget Password?</a>
         <button type="submit" name="login">Login</button>
       </form>
     </div>

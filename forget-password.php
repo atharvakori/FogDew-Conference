@@ -34,7 +34,7 @@
 
     <section class="outermost">
       <div class="form-container">
-        <form action="registration.php" method="post">
+        <form action="reset_password.php" method="post">
             <h2 style="text-align: center;">Forgot Password</h2>
             <p>Enter your email address and we'll give you reset instruction.</p>
           <input type="email" id="email" name="email" placeholder="  example@abc.com" required/><br>

@@ -22,8 +22,8 @@ function sendMail($send_to, $otp, $name)
         $mail->Port       = 587;
 
         // Set your SMTP credentials
-        $mail->Username   = "";  // Change to your SMTP email address
-        $mail->Password   = "";     // Change to your SMTP email password
+        $mail->Username   = "atharva.kori7@gmail.com";  // Change to your SMTP email address
+        $mail->Password   = "usvicugxxpdvrfkb";     // Change to your SMTP email password
 
         // Set sender info
         $mail->setFrom("atharva.kori7@gmail.com", "FogDew");
@@ -155,5 +155,26 @@ if (isset($_POST['otp_verified'])) {
         }
     } else {
         echo "Invalid OTP. Please try again.";
+    }
+}
+
+if (isset($_POST['login'])) {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $verify = "SELECT * FROM registration WHERE email='$email'";
+    $result = $conn->query($verify);
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        $stored_hash = $row['password'];
+        if (password_verify($password, $stored_hash)) {
+            session_start();
+            header("location: index.php");
+            exit();
+        } else {
+            echo "Invalid credentials!";
+        }
+    } else {
+        echo "Enter correct credentials !";
     }
 }

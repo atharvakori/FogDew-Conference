@@ -16,18 +16,28 @@
         <img src="img/frame.png" alt="Host Logos" />
     </div>
 
-    <nav id="navbar">
-        <div id="logo">
-            <a href="index.html"><img src="img/logo.png" alt="FogDew2026"></a>
-        </div>
-        <div id="menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-iitm.html">About IITM</a></li>
-                <li><a href="about-committee.html">Organizing Committee</a></li>
+    <header id="header">
+        <div class="container">
+          <div id="logo" class="pull-left">
+            <a href="index.php"><img src="img/logo.png" alt="FogDew2026"></a>
+          </div>
+      
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li class="menu-active"><a href="index.php">Home</a></li>
+              <li class="menu-has-children">
+                <a href="#">About</a>
+                <ul class="dropdown">
+                  <li><a href="about-iitm.html">About IITM</a></li>
+                  <li><a href="about-committee.html">Organizing Committee</a></li>
+                  <li><a href="https://ews.tropmet.res.in/wifex/aboutUs.php">WiFEx</a></li>
+                </ul>
+              </li>
+              <!-- You can repeat or add additional menu items as needed -->
             </ul>
+          </nav>
         </div>
-    </nav>
+      </header>
     <section class="banner">
     </section>
 

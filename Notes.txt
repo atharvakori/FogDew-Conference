@@ -1,0 +1,17 @@
+connect.php is main file for database connection
+
+----- Below are files for forget password -----
+
+File name :
+forget_pass_mailer.php
+forget-password.php
+process_rest_password.php
+reset_password_link.php
+reset_password.php
+
+----- Below are files for Regestration -----
+
+File name:
+register_otp.php
+register.php
+registration.php
