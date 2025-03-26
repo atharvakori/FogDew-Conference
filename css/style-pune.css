@@ -7,7 +7,6 @@
 
 html,body{
     width: 100%;
-    height: 100%;
 }
 
 /* -------------------
@@ -33,17 +32,18 @@ Host Banner
 Navbar
 -------------------
 ------------------- */
-
 /* Header Container (similar to the reference) */
 #header {
-    position: static;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background: rgba(6, 12, 34, 0.98);
-    padding: 15px 0;
-    transition: all 0.5s;
-  }
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(6, 12, 34, 0.98);
+  padding: 15px 0;
+  transition: all 0.5s;
+}
   
   /* Container inside header */
   .container {
@@ -51,13 +51,12 @@ Navbar
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   
   /* Logo styling */
   #logo img {
     max-height: 40px;
-    padding: 5px 0;
   }
   
   /* Nav Menu Container */
@@ -84,7 +83,7 @@ Navbar
   }
   
   .nav-menu li a {
-    color: rgba(202, 206, 221, 0.8);
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     padding: 8px 12px;
     font-weight: 600;
@@ -127,28 +126,6 @@ Navbar
     color: #000;
   }
   
-  /* Mobile Navigation Toggle (optional, similar to reference) */
-  #mobile-nav-toggle {
-    position: fixed;
-    right: 10px;
-    top: 70px;
-    z-index: 1100;
-    border: 0;
-    background: none;
-    font-size: 24px;
-    display: none; /* Set to block when you implement JS for mobile nav */
-  }
-  
-  /* Media Query for Mobile */
-  @media (max-width: 991px) {
-    #nav-menu-container {
-      display: none;
-    }
-    #mobile-nav-toggle {
-      display: inline-block;
-    }
-  }
-  
   /* Optional: Add transitions or effects on scroll
      (For example, you might add a "header-scrolled" class via JavaScript to change height or background) */
   #header.header-scrolled {
@@ -156,6 +133,38 @@ Navbar
     padding: 10px 0;
   }
   
+
+  .nav-menu li.Registration a {
+    color: #000000;
+    background: #00BBF9;
+    padding: 7px 22px;
+    border-radius: 50px;
+    border: 2px solid #00BBF9;
+    transition: all ease-in-out 0.3s;
+    font-weight: 700;
+    margin-left: 8px;
+    margin-top: 2px;
+    line-height: 1;
+    font-size: 13px;
+  }
+
+  .nav-menu li.Abstract a {
+    color: #000000;
+    background: #FEE440;
+    padding: 7px 22px;
+    border-radius: 50px;
+    border: 2px solid #FEE440;
+    transition: all ease-in-out 0.3s;
+    font-weight: 700;
+    margin-left: 8px;
+    margin-top: 2px;
+    line-height: 1;
+    font-size: 13px;
+}
+
+.selected{
+  color: #FEE440;
+}
 
 /* -------------------
 -------------------

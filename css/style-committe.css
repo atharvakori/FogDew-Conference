@@ -7,7 +7,6 @@
 
 html,body{
     width: 100%;
-    height: 100%;
 }
 
 /* -------------------
@@ -34,37 +33,138 @@ Navbar
 -------------------
 ------------------- */
 
-#navbar{
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 10px;
-    background-color: #070e23;
-}
-
-#navbar #logo a img{
-    margin: 5px;
-    padding-top: 5px;
-    max-height: 40px;
-}
-
-#navbar #menu ul{
-    display: flex;
-    list-style-type: none;
-}
-
-#navbar #menu ul li{
-    margin: 5px;
-    padding: 5px;
-}
-
-#navbar #menu ul li a{
-    text-decoration:none;
-    font-weight: 600;
-    font-size: 14px;
-    display: inline-block;
-    color: rgba(202, 206, 221, 0.8);;
-}
-
+#header {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(6, 12, 34, 0.98);
+    padding: 15px 0;
+    transition: all 0.5s;
+  }
+    
+    /* Container inside header */
+    .container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    
+    /* Logo styling */
+    #logo img {
+      max-height: 40px;
+    }
+    
+    /* Nav Menu Container */
+    #nav-menu-container {
+      float: right;
+    }
+    
+    /* Nav Menu Essentials */
+    .nav-menu,
+    .nav-menu * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    
+    .nav-menu {
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-menu li {
+      position: relative;
+      margin-left: 15px;
+    }
+    
+    .nav-menu li a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      padding: 8px 12px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+    
+    /* Dropdown Menu */
+    .nav-menu li.menu-has-children > ul.dropdown {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      background: #fff;
+      box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+      border-radius: 3px;
+      padding: 10px 0;
+      z-index: 99;
+    }
+    
+    .nav-menu li.menu-has-children:hover > ul.dropdown {
+      display: block;
+    }
+    
+    .nav-menu li.menu-has-children ul.dropdown li {
+      min-width: 180px;
+      margin: 0;
+    }
+    
+    .nav-menu li.menu-has-children ul.dropdown li a {
+      padding: 10px;
+      color: #060c22;
+      font-size: 13px;
+      display: block;
+      transition: background 0.3s, color 0.3s;
+    }
+    
+    .nav-menu li.menu-has-children ul.dropdown li a:hover {
+      background: #9B5DE5;
+      color: #000;
+    }
+    
+    /* Optional: Add transitions or effects on scroll
+       (For example, you might add a "header-scrolled" class via JavaScript to change height or background) */
+    #header.header-scrolled {
+      background: rgba(6, 12, 34, 0.98);
+      padding: 10px 0;
+    }
+    
+  
+    .nav-menu li.Registration a {
+      color: #000000;
+      background: #00BBF9;
+      padding: 7px 22px;
+      border-radius: 50px;
+      border: 2px solid #00BBF9;
+      transition: all ease-in-out 0.3s;
+      font-weight: 700;
+      margin-left: 8px;
+      margin-top: 2px;
+      line-height: 1;
+      font-size: 13px;
+    }
+  
+    .nav-menu li.Abstract a {
+      color: #000000;
+      background: #FEE440;
+      padding: 7px 22px;
+      border-radius: 50px;
+      border: 2px solid #FEE440;
+      transition: all ease-in-out 0.3s;
+      font-weight: 700;
+      margin-left: 8px;
+      margin-top: 2px;
+      line-height: 1;
+      font-size: 13px;
+  }
+  
+  .selected{
+    color: #FEE440;
+  }
 /* -------------------
 -------------------
 Banner Image
