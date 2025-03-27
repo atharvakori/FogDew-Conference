@@ -152,9 +152,9 @@
                 alt="Speaker 1"
                 class="img-fluid" />
               <div class="details">
-                <!-- <h3><a href="speaker-details.html">hello world</a></h3>
+                <!-- <h3><a href="#">hello world</a></h3>
                   <p>Quas alias incidunt</p> -->
-                <h3><a href="speaker-details.html"></a></h3>
+                <h3><a href="#"></a></h3>
                 <div class="social">
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-facebook"></i></a>
@@ -171,9 +171,9 @@
                 alt="Speaker 2"
                 class="img-fluid" />
               <div class="details">
-                <!-- <h3><a href="speaker-details.html">hello world</a></h3>
+                <!-- <h3><a href="#">hello world</a></h3>
                   <p>Quas alias incidunt</p> -->
-                <h3><a href="speaker-details.html"></a></h3>
+                <h3><a href="#"></a></h3>
                 <div class="social">
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-facebook"></i></a>
@@ -190,9 +190,9 @@
                 alt="Speaker 3"
                 class="img-fluid" />
               <div class="details">
-                <!-- <h3><a href="speaker-details.html">hello world</a></h3>
+                <!-- <h3><a href="#">hello world</a></h3>
                   <p>Quas alias incidunt</p> -->
-                <h3><a href="speaker-details.html"></a></h3>
+                <h3><a href="#"></a></h3>
                 <div class="social">
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-facebook"></i></a>
@@ -209,9 +209,9 @@
                 alt="Speaker 4"
                 class="img-fluid" />
               <div class="details">
-                <!-- <h3><a href="speaker-details.html">hello world</a></h3>
+                <!-- <h3><a href="#">hello world</a></h3>
                   <p>Quas alias incidunt</p> -->
-                <h3><a href="speaker-details.html"></a></h3>
+                <h3><a href="#"></a></h3>
                 <div class="social">
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-facebook"></i></a>
@@ -228,9 +228,9 @@
                 alt="Speaker 5"
                 class="img-fluid" />
               <div class="details">
-                <!-- <h3><a href="speaker-details.html">hello world</a></h3>
+                <!-- <h3><a href="#">hello world</a></h3>
                   <p>Quas alias incidunt</p> -->
-                <h3><a href="speaker-details.html"></a></h3>
+                <h3><a href="#"></a></h3>
                 <div class="social">
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-facebook"></i></a>
@@ -247,9 +247,9 @@
                 alt="Speaker 6"
                 class="img-fluid" />
               <div class="details">
-                <!-- <h3><a href="speaker-details.html">hello world</a></h3>
+                <!-- <h3><a href="#">hello world</a></h3>
                   <p>Quas alias incidunt</p> -->
-                <h3><a href="speaker-details.html"></a></h3>
+                <h3><a href="#"></a></h3>
                 <div class="social">
                   <a href=""><i class="fa fa-twitter"></i></a>
                   <a href=""><i class="fa fa-facebook"></i></a>

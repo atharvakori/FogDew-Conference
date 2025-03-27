@@ -23,7 +23,7 @@ function sendMail($send_to, $otp, $name)
 
         // Set your SMTP credentials
         $mail->Username   = "atharva.kori7@gmail.com";  // Change to your SMTP email address
-        $mail->Password   = "usvicugxxpdvrfkb";     // Change to your SMTP email password
+        $mail->Password   = "";     // Change to your SMTP email password
 
         // Set sender info
         $mail->setFrom("atharva.kori7@gmail.com", "FogDew");
@@ -70,7 +70,7 @@ if (isset($_POST['register'])) {
     // Process file upload for endorsement if provided
     $endorsement_file = "";
     if (!empty($_FILES["endorsement"]["name"])) {
-        $target_dir = "upload/";
+        $target_dir = "upload/endorsement_files/";
         $file_name  = $_FILES["endorsement"]["name"];
         $file_tmp   = $_FILES["endorsement"]["tmp_name"];
         $file_type  = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
@@ -81,18 +81,15 @@ if (isset($_POST['register'])) {
             exit();
         }
 
-        // Rename file to prevent duplicates
         $new_file_name   = time() . "_" . uniqid() . "." . $file_type;
         $endorsement_file = $target_dir . $new_file_name;
 
-        // Move uploaded file
         if (!move_uploaded_file($file_tmp, $endorsement_file)) {
             echo "File upload failed!";
             exit();
         }
     }
 
-    // Check if the email is already registered
     $checkEmail = "SELECT * FROM registration WHERE email='$email'";
     $result = $conn->query($checkEmail);
     if ($result->num_rows > 0) {
@@ -100,10 +97,8 @@ if (isset($_POST['register'])) {
         exit();
     }
 
-    // Generate a 6-digit OTP using random_int
     $verification_otp = random_int(100000, 999999);
 
-    // Store registration data and OTP in session
     $_SESSION['registration_data'] = array(
         'full_name'           => $fullname,
         'email'               => $email,
@@ -121,15 +116,11 @@ if (isset($_POST['register'])) {
     );
     $_SESSION['otp'] = $verification_otp;
 
-    // Send the OTP using PHPMailer
     sendMail($email, $verification_otp, $fullname);
 
-    // echo "OTP has been sent to your email. Please enter the OTP to complete registration.";
-    // exit();
     header("Location: register_otp.php");
 }
 
-// Step 2: OTP verification and final registration insertion
 if (isset($_POST['otp_verified'])) {
     if (!isset($_SESSION['otp']) || !isset($_SESSION['registration_data'])) {
         echo "Session expired. Please register again.";
@@ -139,15 +130,14 @@ if (isset($_POST['otp_verified'])) {
     $entered_otp = $_POST['otp'];
 
     if ($entered_otp == $_SESSION['otp']) {
-        // OTP is correct; retrieve registration data from session
         $data = $_SESSION['registration_data'];
         $insertQuery = "INSERT INTO registration (full_name, email, phone_no, gender, diet, allergy, student_or_delegates, endorsement_file, institute_name, institute_address, designation, country, password) 
                         VALUES ('" . $data['full_name'] . "', '" . $data['email'] . "', '" . $data['phone_no'] . "', '" . $data['gender'] . "', '" . $data['diet'] . "', '" . $data['allergy'] . "', '" . $data['student_or_delegates'] . "', '" . $data['endorsement_file'] . "', '" . $data['institute_name'] . "', '" . $data['institute_address'] . "', '" . $data['designation'] . "', '" . $data['country'] . "', '" . $data['password'] . "')";
 
         if ($conn->query($insertQuery) === TRUE) {
-            // Clear session data and OTP after successful registration
             unset($_SESSION['registration_data']);
             unset($_SESSION['otp']);
+            session_destroy();
             header("Location: index.html");
             exit();
         } else {

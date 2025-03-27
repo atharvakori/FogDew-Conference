@@ -16,7 +16,7 @@ $mail->Port       = 587;
 
 // Set your SMTP credentials
 $mail->Username   = "atharva.kori7@gmail.com";  // Change to your SMTP email address
-$mail->Password   = "usvicugxxpdvrfkb";     // Change to your SMTP email password
+$mail->Password   = "";     // Change to your SMTP email password
 
 $mail->isHTML(true);
 return $mail;

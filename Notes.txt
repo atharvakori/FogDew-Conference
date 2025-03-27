@@ -15,3 +15,9 @@ File name:
 register_otp.php
 register.php
 registration.php
+
+----- password Removed from -----
+
+contactForm.php
+forget_pass_mailer.php
+registration.php
