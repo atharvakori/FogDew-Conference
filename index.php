@@ -66,6 +66,15 @@
             </ul>
           </li>
 
+          <li class="menu-has-children">
+            <a href="#">Travel, Stay & Visa</a>
+            <ul class="dropdown">
+              <li><a href="accommodation.html">Accommodation</a></li>
+              <li><a href="travel.html">Travel</a></li>
+              <li><a href="Visa.html" >Visa</a></li>
+            </ul>
+          </li>
+
           <li><a href="#contact">Contact</a></li>
           <li class="Registration">
             <a href="register.php" >Registration</a>
