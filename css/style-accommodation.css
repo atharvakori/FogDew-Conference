@@ -228,3 +228,11 @@ Info Section
     max-width: 1100px;
     margin: 0px 20px;
 }
+
+.location {
+  color: #1956ef;
+}
+
+.location a {
+  text-decoration: none;
+}
