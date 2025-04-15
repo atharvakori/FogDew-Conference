@@ -1,0 +1,368 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+/* -------------------
+-------------------
+Host Banner
+-------------------
+------------------- */
+
+.top-banner {
+  width: 100%;
+  text-align: center; /* Center the image */
+  padding: 10px 0; /*Add some spacing */
+  border-bottom: 1px solid #ddd; /* Thin separator line */
+}
+
+.top-banner img {
+  max-width: 100%;
+  height: 50px; /* Maintain aspect ratio */
+}
+
+/* -------------------
+-------------------
+Navbar
+-------------------
+------------------- */
+/* Header Container (similar to the reference) */
+#header {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(6, 12, 34, 0.98);
+  padding: 15px 0;
+  transition: all 0.5s;
+}
+
+/* Container inside header */
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Logo styling */
+#logo img {
+  max-height: 40px;
+}
+
+/* Nav Menu Container */
+#nav-menu-container {
+  float: right;
+}
+
+/* Nav Menu Essentials */
+.nav-menu,
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu li {
+  position: relative;
+  margin-left: 15px;
+}
+
+.nav-menu li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+/* Dropdown Menu */
+.nav-menu li.menu-has-children > ul.dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  border-radius: 3px;
+  padding: 10px 0;
+  z-index: 99;
+}
+
+.nav-menu li.menu-has-children:hover > ul.dropdown {
+  display: block;
+}
+
+.nav-menu li.menu-has-children ul.dropdown li {
+  min-width: 180px;
+  margin: 0;
+}
+
+.nav-menu li.menu-has-children ul.dropdown li a {
+  padding: 10px;
+  color: #060c22;
+  font-size: 13px;
+  display: block;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-menu li.menu-has-children ul.dropdown li a:hover {
+  background: #9b5de5;
+  color: #000;
+}
+
+/* Optional: Add transitions or effects on scroll
+     (For example, you might add a "header-scrolled" class via JavaScript to change height or background) */
+#header.header-scrolled {
+  background: rgba(6, 12, 34, 0.98);
+  padding: 10px 0;
+}
+
+.nav-menu li.Registration a {
+  color: #000000;
+  background: #00bbf9;
+  padding: 7px 22px;
+  border-radius: 50px;
+  border: 2px solid #00bbf9;
+  transition: all ease-in-out 0.3s;
+  font-weight: 700;
+  margin-left: 8px;
+  margin-top: 2px;
+  line-height: 1;
+  font-size: 13px;
+}
+
+.nav-menu li.Abstract a {
+  color: #000000;
+  background: #fee440;
+  padding: 7px 22px;
+  border-radius: 50px;
+  border: 2px solid #fee440;
+  transition: all ease-in-out 0.3s;
+  font-weight: 700;
+  margin-left: 8px;
+  margin-top: 2px;
+  line-height: 1;
+  font-size: 13px;
+}
+
+.selected {
+  color: #fee440;
+}
+
+/* -------------------
+-------------------
+Banner Image
+-------------------
+------------------- */
+
+.banner {
+  height: 400px;
+  width: 100%;
+  background-image: url("../img/visa-banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* -------------------
+-------------------
+Heading
+-------------------
+------------------- */
+
+.heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading h1 {
+  margin-top: 1.5%;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #373737;
+  font-family: "Montserrat Alternates";
+}
+
+.heading h2 {
+  font-size: 1.2rem;
+  color: #373737;
+  font-weight: 700;
+  font-family: "Fondamento";
+}
+
+/* -------------------
+-------------------
+Main content
+-------------------
+------------------- */
+
+.outer {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  color: #5d5d5d;
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  max-width: 1100px;
+  margin: 0px 20px;
+}
+
+.info a {
+  color: #000000;
+  background: #9ae6ff;
+  padding: 7px 22px;
+  margin: 10px;
+  border-radius: 50px;
+}
+
+.visa-links-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.visa-links-container h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.visa-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.visa-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.visa-card:hover {
+  transform: translateY(-5px);
+}
+
+.visa-card i {
+  font-size: 2rem;
+  color: #00bbf9;
+  margin-bottom: 1rem;
+}
+
+.visa-card h4 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.visa-card a {
+  display: inline-block;
+  color: #fff;
+  background-color: #00bbf9;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.visa-card a:hover {
+  background-color: #0096c7;
+}
+
+.visa-card a i {
+  font-size: 0.9rem;
+  color: #fff;
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .visa-links-container {
+    padding: 1rem;
+  }
+
+  .visa-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .visa-card {
+    padding: 1rem;
+  }
+
+  .visa-links-container h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .visa-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visa-card h4 {
+    font-size: 1.1rem;
+  }
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  width: 90vw;
+  padding: 10px;
+  margin: auto;
+  border-radius: 40px;
+}
+
+/* -------------------
+-------------------
+Footer
+-------------------
+------------------- */
+
+footer {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  background-color: #070e23;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+footer div {
+  margin-top: 1.5em;
+}
