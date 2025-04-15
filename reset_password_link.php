@@ -85,7 +85,7 @@ if (strtotime($user['rest_token_expires_at']) <= time()) {
             </ul>
           </li>
 
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.php.#contact">Contact</a></li>
                     <li class="Registration">
                         <a href="register.php">Registration</a>
                     </li>

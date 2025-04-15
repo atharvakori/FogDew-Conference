@@ -1072,22 +1072,30 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Links</h4>
             <ul>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#intro">Home</a></li>
               <li>
-                <i class="fa fa-angle-right"></i> <a href="#">About us</a>
+                <i class="fa fa-angle-right"></i> <a href="about-pune.html">About</a>
               </li>
               <li>
-                <i class="fa fa-angle-right"></i> <a href="#">Services</a>
-              </li>
-              <li>
-                <i class="fa fa-angle-right"></i>
-                <a href="#">Terms of service</a>
+                <i class="fa fa-angle-right"></i> <a href="#schedule">Conference</a>
               </li>
               <li>
                 <i class="fa fa-angle-right"></i>
-                <a href="#">Privacy policy</a>
+                <a href="accommodation.html">Travel, Stay & Visa</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a href="#contact">Contact</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a href="register.php">Registration</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a href="abstract-submission.html">Abstract Submission</a>
               </li>
             </ul>
           </div>
