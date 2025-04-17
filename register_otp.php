@@ -49,15 +49,14 @@
                     </li>
 
                     <li class="menu-has-children">
-            <a href="#">Travel, Stay & Visa &nbsp<i
-                    class="fa-solid fa-caret-down"
-                  ></i></a>
-            <ul class="dropdown">
-              <li><a href="accommodation.html">Accommodation</a></li>
-              <li><a href="travel.html">Travel</a></li>
-              <li><a href="Visa.html" >Visa</a></li>
-            </ul>
-          </li>
+                        <a href="#">Travel, Stay & Visa &nbsp<i
+                                class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="accommodation.html">Accommodation</a></li>
+                            <li><a href="travel.html">Travel</a></li>
+                            <li><a href="Visa.html">Visa</a></li>
+                        </ul>
+                    </li>
 
                     <li><a href="index.php.#contact">Contact</a></li>
                     <li class="Registration">

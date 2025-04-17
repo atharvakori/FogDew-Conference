@@ -138,7 +138,7 @@ if (isset($_POST['otp_verified'])) {
             unset($_SESSION['registration_data']);
             unset($_SESSION['otp']);
             session_destroy();
-            header("Location: index.html");
+            header("Location: abstract-submission-main.php");
             exit();
         } else {
             echo "Error: " . $conn->error;
@@ -159,7 +159,7 @@ if (isset($_POST['login'])) {
         $stored_hash = $row['password'];
         if (password_verify($password, $stored_hash)) {
             session_start();
-            header("location: index.php");
+            header("location: abstract-submission-main.php");
             exit();
         } else {
             echo "Invalid credentials!";
